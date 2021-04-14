@@ -1,0 +1,45 @@
+class Ray5
+{
+public static void main(String[]args)
+{
+//private void frequencyCheck() {
+    // TODO Auto-generated method stub
+    // Frequency of each element in a given array
+        int[] a = {20,10,20,10,60,30,40,10,20,30,10,20,10}; 
+      int[] freq  = new int[a.length]; 
+
+        for(int j = 0;j<a.length;j++)
+        {
+        int no = a[j]; //20
+        int count = 1; 
+        for(int i=j+1; i<a.length; i++)
+        {
+          if(no==a[i]) 
+          {
+            count++;
+            freq[i] = -1; 
+          }
+        }
+        if(freq[j]!=-1)
+          freq[j] = count; 
+      //  System.out.println(a[j] + " count is " + count); 
+      
+        }
+        
+      //findMax(); 
+        
+           int position = 0; 
+          int max = 0;  //-2147483648
+          for(int i=0;i<freq.length;i++)
+          {
+          if(freq[i]>max)// >5
+          {
+            max= freq[i];//5
+            position = i; //1
+          }
+          }
+          System.out.println(max  + " position "+ position); 
+      
+          System.out.println("No is " + a[position]);
+}
+}
