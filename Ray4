@@ -1,0 +1,20 @@
+class Ray4
+{
+public static void main(String[]args)
+{
+//private void findMax() {
+    // TODO Auto-generated method stub
+    int[] freq = {-4,-5,-11,-13,-2};
+  //  System.out.println(Integer.MIN_VALUE);
+
+    int min = 0;  
+    for(int i=0;i<freq.length;i++)
+    {
+    if(freq[i]<min)//-2<-13
+      min= freq[i];//13
+    }
+    System.out.println(min); 
+    
+  }
+  }
+  
