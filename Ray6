@@ -1,0 +1,27 @@
+class Ray6
+{
+public static void main(String[]args)
+{
+//private void findSecondMax() 
+    // TODO Auto-generated method stub
+    int max =0, smax = 0; 
+    int[] ar = {10,20,30,25,15}; 
+    int i =0; 
+  while(i<ar.length)
+  {
+    int no = ar[i]; //30 
+    if(no>max)//20>10,30
+      {
+      smax = max; //smax= 0,10,20
+      max = no; //max=10,20,30
+      }
+    else if(no>smax)
+      {
+    smax = no; // smax=25
+      }
+    i++; 
+  }
+  System.out.println("second max "+ smax);
+    
+  }
+}
