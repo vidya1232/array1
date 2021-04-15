@@ -1,0 +1,26 @@
+class Ray8
+{
+public static void main(String[]args)
+{
+
+int[] arr ={13,16,11,20};// (11,16,13,20)//(11,13,16,20)
+for(int i=0;i<arr.length;i++)   // i=1
+{
+int smallest = arr[i]; //13,16
+int temp;
+for(int j=i+1;j<arr.length;j++) // j=0+1,2,//j=1+1,3,
+{
+if(arr[i]>arr[j])    //13>16,13>11,13>20 //16>13,16>20
+{
+temp = arr[j];   //11//13
+ arr[j]=arr[i];    //13//16
+ arr[i]=temp;   //11//13
+}
+}
+}
+for(int k=0;k<arr.length;k++)
+{
+ System.out.print(arr[k] + " ");
+}
+}
+}
