@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Ray10
+{
+public static void main(String[]args)
+{
+int[][] marks = new int[2][2]; 
+    Scanner sc = new Scanner(System.in);
+    for(int row=0;row<2;row++)
+    {
+    for(int col=0;col<2;col++)
+    {
+      System.out.println("Enter marks ");
+      marks[row][col] = sc.nextInt(); 
+    }
+    }
+    for(int row=0;row<2;row++)
+    {
+      
+    for(int col=0;col<2;col++)
+    {
+		System.out.print("Marks of Student "+ row + " "); 
+      System.out.println(marks[row][col] + " ");
+    }
+    }
+	}
+	}
