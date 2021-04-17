@@ -1,0 +1,26 @@
+class Sec_Max
+{
+public static void main(String[]args)
+{
+int a[]={90,78,65,45,87,100};
+int max=0;
+int smax=0;
+for(int i =0;i<a.length;i++)
+{
+	int no = a[i];
+if(no>max)
+{
+//90,
+smax=max;//0
+max=no;
+}
+else if(no>smax)//
+{
+smax=no;//78,87
+}
+}
+
+System.out.print(smax);
+
+}
+}
