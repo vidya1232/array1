@@ -1,0 +1,20 @@
+class Min_Number
+{
+public static void main(String[]args)
+{
+int a[] = {12,14,65,84,99,12};
+
+int min =a[0];
+int position =0;
+int positionrep=0;
+for(int i=1;i<a.length;i++)
+{
+if(a[i] <= min)//80<90//66<80,78<66,88<66,98<66,41<66
+{
+min=a[i];//min=80,66,41
+ positionrep =i;
+}
+}
+System.out.print("the max value is "+min+" "+position+" "+positionrep);
+}
+}
