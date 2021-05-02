@@ -1,0 +1,27 @@
+package vidya;
+import java.util.Scanner;
+public class Multiplication {
+	Scanner ss =new Scanner(System.in);
+	//System.out.println("enter any number frome 1");
+	int n=ss.nextInt();
+
+	
+	public static void main(String[] args) {
+		
+	
+		Multiplication mm = new Multiplication();
+		mm.calmethod();
+
+	}
+	
+	private void calmethod() {
+		
+		for(int i=1;i<=10;i++)
+		{
+			
+		
+			System.out.println(n*i);
+		}
+	}
+
+}
