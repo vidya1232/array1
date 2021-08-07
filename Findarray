@@ -1,0 +1,24 @@
+public class Findarray {
+	public static void main(String[] args) 
+	{
+		int arr[]= {1,2,3,4,5};
+		int arr2[]= { 2,3,1,0,5 };
+		//int a[]= new int [arr.length];
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			int count=0;
+			for(int j=0;j<arr2.length;j++)
+			{
+				if(arr[i]==arr2[j])
+				{
+					count++;
+					//a[i]=count;
+				}
+			}
+			if(count<1)
+				System.out.println(arr[i]);
+		}
+	
+}
+//Given two arrays, 1,2,3,4,5 and 2,3,1,0,5 find which number is not present in the second array.
